@@ -6,22 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SuperHero API</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>SuperHero API</h1>
-
-    <input id="SearchInput" type="text" placeholder="search for a hero">
-    <input id="Sbtn" type="button" value="search">
-
-    <button id="btn">Random Hero</button>
-
-    <div id="container">
-
-        <h3 id="head3" ></h3>
-        <img id="image" src="" alt="">
-
+    <!-- html -->
+    <div class="header">
+        <h1>SuperHero BASE</h1>
     </div>
 
-      <script src="script.js"></script>
+    <div class="main">
+        <div class="controls">
+            <input id="SearchInput" type="text" placeholder="Search superHero">
+            <button id="Sbtn"><i class="fa-brands fa-searchengin"></i></button>        
+            <button id="btn">Random Hero</button>
+        </div>
+    
+        <div id="container">
+            <div class="image">
+                <img id="image" src="" alt="">
+            </div>
+    
+            <div class="details">
+                <h2 id="char_name" ></h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

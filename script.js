@@ -12,12 +12,11 @@ const getSearchSuperHero = (name) =>{
 
     let data = info.results[0];
 
+    const nameElement = document.getElementById('char_name');
+    nameElement.textContent = data.name;
+
     const ImageElement = document.getElementById('image');
     ImageElement.src = data.image.url
-
-    const containerElement = document.getElementById('head3');
-    containerElement.innerText = data.name
-    
 
   })
 
@@ -28,15 +27,11 @@ const getRandomSuperHero = (id) => {
   .then(response => response.json())
   .then(data => {
     // Do something with the data
-    const nameElement = document.createElement('h2');
+    const nameElement = document.getElementById('char_name');
     nameElement.textContent = data.name;
 
     const ImageElement = document.getElementById('image');
     ImageElement.src = data.image.url
-
-    const containerElement = document.getElementById('container');
-    containerElement.appendChild(nameElement);
-
   })
 
 }
