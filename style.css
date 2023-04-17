@@ -39,9 +39,17 @@
     align-items: center;
     padding: 20px;
 }
-.controls input{
-    margin: 5px;
+
+.search_bar{
+    width: 320px;
+    height:35px;
+    border-radius: 5px;
+    margin-right: 10px;
     border: 1px solid #dedcdc;
+    position: relative;
+}
+.controls input{
+    border: none;
     border-radius: 5px;
     padding: 8px;
     font-size: 17px;
@@ -50,14 +58,16 @@
     background-color: transparent;
 }
 .controls #Sbtn{
-    border: 1px solid #dedcdc;
+    position: absolute;
+    border: none;
     border-radius: 5px;
     font-size: 20px;
     font-weight: lighter;
-    padding: 7px 12px;
-    margin-right: 10px;
     color: rgb(47, 46, 47);
     background-color: transparent;
+    right: 0;
+    top: 50%;
+    transform: translate(0,-50%);
 }
 .controls #btn{
     background-color: transparent;
@@ -79,14 +89,14 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    margin: 30px;
+    margin: 40px;
     padding: 0;
 }
 
 #image{
     border-radius: 10px;
     height:500px;
-    margin: 10px;
+    margin-top: 5px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
@@ -96,6 +106,24 @@
 }
 .details{
     position: absolute;
-    top: 50%;
-    right: 20%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details h2{
+    font-size: 50px;
+    margin: 20px;
+}
+
+#powerstats{
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#powerstats p{
+    padding: 9px;
+    font-size: 25px;
 }
