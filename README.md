@@ -2,6 +2,7 @@
 project done during mastering javascript and getting used to API's
 
 you can search for a superhero like 'batman', 'spider-man', 'ironman', 'thanos'..........
+
 [Demo Link](https://lokesh-04.github.io/Javascript-API/)
 
 
