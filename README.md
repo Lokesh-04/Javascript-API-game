@@ -11,3 +11,5 @@ you can search for a superhero like 'batman', 'spider-man', 'ironman', 'thanos'.
 ![alt text](https://github.com/Lokesh-04/Javascript-API/blob/master/demo%20image.png)
 
 Use this webapp for getting your superhero stats
+
+creating some pr's
